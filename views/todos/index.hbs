@@ -1,0 +1,13 @@
+<!-- views/todos/index.hbs -->
+<h1>Todos</h1>
+<ul class="list-group">
+    {{#each todos}}
+    <li class="list-group-item d-flex justify-content-between">
+        <div>{{this.title}}</div>
+        <div class="links">
+            <!-- for actions later -->
+            <a href="/todos/{{this.id}}" class=" btn btn-info">View Button</a>
+        </div>
+    </li>
+    {{/each}}
+</ul>
